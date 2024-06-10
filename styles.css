@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: #d21617;
+}
+
+#logo  {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://i.redd.it/6092ltrt8nt71.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100% ;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    align-items: center;
+    font-size: 18px;
+    display: flex;
+    justify-self: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.banner-1 {
+    background-image: url('https://noticiasdatv.uol.com.br/media/uploads/artigos_2021/batman-robert-pattinson-foto-divulgacao-warner-bros.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://pbs.twimg.com/media/FMOk4EiXEAURgip.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/2/28/Jim_Gordon_Total_Film_still.jpg/revision/latest?cb=20220216015018');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#comment-container {
+    width: 100% ;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.comment {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.trailer2 {
+    width: 50%;
+}
+
+#sinopse2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+.description2 {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+
+#banner2 {
+    background-image: url('https://www.palmas.to.gov.br/media/banner/2_3_2022_15_43_4.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+body {
+    font-family: 'kdam Thmor Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #333; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(248, 73, 73); 
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(204, 44, 44);
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #777; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #444; 
+    color: white;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.actor-cards-container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cards-content2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.banner-4 {
+    background-image: url('https://i.pinimg.com/564x/68/34/af/6834aff0b6876980ba05c53daa7ac15b.jpg');
+}
+
+.banner-5 {
+    background-image: url('https://images.elle.com.br/2022/08/origin-118.jpg');
+}
+
+.banner-6 {
+    background-image: url('https://t.ctcdn.com.br/zi1akcdhKrVr4dlZ7IY3ZBbkFxg=/640x360/smart/i360687.jpeg');
+}
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 40% ;
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin: 150px;
+
+    }
+}
